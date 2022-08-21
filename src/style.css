@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    background-color: #0B2434;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    padding: 30px;
+}
+
+.app--background{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: #F5F5F5;
+    width:90vw;
+    height: 90vh;
+    max-height: 550px;
+    max-width: 600px;
+    border-radius: 10px;
+    padding: 30px;
+    overflow: hidden;
+}
+
+.app--dice-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.dice{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    color: #2B283A;
+    height: 60px;
+    width: 60px; 
+    cursor: pointer;
+}
+
+.dice-held{
+    background: #59E391 !important;
+}
+
+.app--title{
+    margin: 0;
+    padding: 0;
+}
+
+.app--desc{
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 0 
+}
+
+.app--button-roll{
+    width: 150px;
+    height: 66px;
+    background: #5035FF;
+    box-shadow: 0px 3.2px 7.68px rgba(0, 0, 0, 0.18);
+    border-radius: 6px;
+    color: #FFFFFF;
+    font-size: 2rem;
+    font-weight: 700;
+    border: 0px;
+    cursor: pointer;
+
+}
+
+.app--button-roll:active{
+    background-color: #1b1153;
+    box-shadow: 0 5px #666;
+    transform: translateY(3px);
+}
+
+@media only screen and (max-width: 520px){
+
+    .app--dice-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        gap: 30px;
+    }
+}
